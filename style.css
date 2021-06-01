@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
 body{
     margin: 0px;
     padding: 0px;
     background: rgb(63,193,251);
     background: radial-gradient(circle, rgba(63,193,251,1) 0%, rgba(198,70,252,1) 100%);
+    font-family: 'Dosis', sans-serif;
 }
 
 .wrapperCalculator{
@@ -32,11 +35,15 @@ body{
 
 .wrapperResult{
     margin: 0px 0px 5px 15px;
-    height: 72px;
-    width: 81%;
+    height: 41px;
+    width: 63%;
     border: 1px solid;
     float: left;
     background-color: black;
+    color: #23ff16;
+    padding: 18px;
+    overflow-y: scroll;
+    font-size: 12px;
 }
 
 .btnNumber{
@@ -48,10 +55,17 @@ body{
     margin: 2px;
     border-radius: 10px;
     background-color: #bad4cdd6;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+.btnNumber:hover{
+    background-color: #728f87d6;
+    font-size: 24px;
 }
 
 .btnOperator{
-    background-color: #ff000094;
+    background-color: #ff000073;
     color: white;
     height: 86px;
     width: 35px;
@@ -60,4 +74,30 @@ body{
     line-height: 89px;
     margin: 2px;
     border-radius: 10px;
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+.btnOperator:hover{
+    background-color: #ff0000;
+    font-size: 24px;
+}
+
+.btnToResult{
+    background-color: #15152c69;
+    color: white;
+    height: 86px;
+    width: 35px;
+    float: left;
+    text-align: center;
+    line-height: 89px;
+    margin: 2px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+.btnToResult:hover{
+    background-color: #15152cba;
+    font-size: 17px;
 }

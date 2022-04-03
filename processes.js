@@ -27,8 +27,10 @@ window.addEventListener('load',()=>{
 });
 
 let getValueBtnCalculator = (e) => {
-    wrapperResult.append(e.target.dataset.value);
-    console.log(e.target.dataset.value);
+    let val = e.target.dataset.value;
+    if(val != '=' && val != 'AC'){
+        wrapperResult.append(val);
+    }
 }
 
 let addedBtnDivs = (valueBtns) => {
